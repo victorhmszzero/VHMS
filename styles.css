@@ -1,0 +1,254 @@
+* {
+  font-family: "Montserrat", sans-serif; /* Aplica a fonte Montserrat */
+}
+
+@media only screen and (max-width: 980px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  a,
+  p,
+  div {
+    font-size: 12px !important;
+    line-height: 32px;
+  }
+  .indicator {
+    width: 20px !important ;
+  }
+  .carousel {
+    margin-bottom: 40px;
+  }
+  .prev-btn {
+    left: 10px !important;
+    width: 50px !important;
+    opacity: 0.6;
+  }
+  .next-btn {
+    right: 10px !important;
+    width: 50px !important;
+    opacity: 0.6;
+  }
+}
+
+body {
+  background-color: #1a1a1a;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Estilos para o cabeçalho */
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  margin: 15px auto;
+  margin-bottom: 40px;
+}
+
+h2 {
+  letter-spacing: 10px;
+  font-weight: 300;
+  color: #f5b400;
+  margin-bottom: 0px;
+}
+/* Estilos para os links de seção */
+.section-link {
+  user-select: none;
+  transition: all 200ms;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para os links de seção no hover */
+.section-link:hover {
+  background-color: #474747;
+}
+.section-link--activate,
+.section-link--activate:hover {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: default;
+}
+.section-link--carousel {
+  position: absolute;
+  bottom: 60px;
+  padding: 20px 30px;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%);
+  font-weight: 600;
+
+  background-color: #f5b400;
+  color: rgb(255, 255, 255);
+}
+.section-link--carousel:hover {
+  align-self: right;
+  background-color: #474747;
+  color: rgb(255, 255, 255);
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 80%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  text-align: center;
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  max-width: 425px;
+  height: 100%;
+  z-index: 1;
+}
+.iframe-big {
+  max-width: 800px;
+}
+.prev-btn,
+.next-btn {
+  user-select: none;
+  position: absolute;
+  background-color: #474747;
+  color: #1a1a1a;
+  border: none; /* Remova a borda */
+  border-radius: 50%; /* Transforma o botão em um círculo */
+  width: 50px; /* Defina a largura */
+  height: 50px; /* Defina a altura */
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 20%;
+}
+
+.next-btn {
+  right: 20%;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+.indicators {
+  align-self: flex-start;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.indicator {
+  transition: all 500ms;
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: #6c6c6c;
+  border-radius: 10px;
+  margin: 0 5px 20px;
+}
+
+.indicator.active {
+  width: 100px;
+  background-color: #ffffff;
+}
+
+.loading-icon {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f5b400;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+.loading-icon p {
+  color: white;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: block; /* Mostra o ícone de carregamento quando necessário */
+}
+.label {
+  position: absolute;
+  white-space: nowrap;
+  padding-top: 120px;
+  color: white;
+}
+
+.content-loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1;
+}
+.web-container {
+  min-width: 400px;
+  margin: 20px auto 0px;
+  width: 50%; /* Largura do contêiner */
+  height: 100%; /* Altura do contêiner */
+  overflow: hidden; /* Oculta o conteúdo fora do contêiner */
+  position: relative; /* Define a posição relativa para posicionamento absoluto do pseudo-elemento */
+  display: flex; /* torna o container um flex container */
+  align-items: flex-start; /* alinha a imagem no topo do container */
+}
+
+.web-image {
+  width: 100%; /* Largura da imagem */
+  transition: transform 2s ease; /* Adiciona uma transição suave */
+}
+
+.image {
+  object-fit: contain;
+  height: 90%;
+  width: 100%;
+}
+.web-container:hover .web-image {
+  transform: translateY(calc(-100% + 65vh)); /* Move a imagem para cima (para revelar a parte inferior) quando pressionada */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio VHMS</title>
+    <link rel="icon" href="assets/FavIcon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Portfólio</h2>
+      <h1>Victor Magalhães</h1>
+      <a href="#" class="section-link section-link--activate">Web Design</a>
+      <a href="design.html" class="section-link">Design Gráfico</a>
+      <a href="reels.html" class="section-link">Reels</a>
+      <a href="motion-design.html" class="section-link">Motion Design</a>
+    </header>
+    <div class="carousel">
+      <div class="indicators"></div>
+      <button class="prev-btn">&#10094;</button>
+      <div class="carousel-content">
+        <div class="slide">
+          <a href="https://conieh.com.br" target="_blank" class="section-link section-link--carousel">
+            <i class="fas fa-external-link-alt"></i> Visualizar Site
+          </a>
+          <div class="web-container">
+            <img src="assets/ConiehPreview.png" alt="ConiehPreview" class="web-image" />
+          </div>
+        </div>
+        <div class="slide">
+          <a href="https://conieh.com.br/tande/" target="_blank" class="section-link section-link--carousel">
+            <i class="fas fa-external-link-alt"></i> Visualizar Landing Page
+          </a>
+          <div class="web-container">
+            <img src="assets/TandePreview.png" alt="ConiehPreview" class="web-image" />
+          </div>
+        </div>
+      </div>
+      <button class="next-btn">&#10095;</button>
+    </div>
+    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/script-resetVideos.js"></script> -->
+    <script src="scripts/database-Reels.js"></script>
+  </body>
+</html>
