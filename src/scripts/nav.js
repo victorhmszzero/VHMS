@@ -4,17 +4,17 @@ const LINKSLIST = [
   {
     id: 1,
     text: "Web Design",
-    link: "../../pages/webDesign.html",
+    link: "../pages/webDesign.html",
   },
   {
     id: 2,
     text: "Design Gráfico",
-    link: "../../pages/design.html",
+    link: "../pages/design.html",
   },
   {
     id: 2,
     text: "Motion Design",
-    link: "../../pages/motionDesign.html",
+    link: "../pages/motionDesign.html",
   },
 ]
 
@@ -27,7 +27,7 @@ function navMapper() {
     `;
 
     navContainer.appendChild(link);
-    
+
   });
   setupIndicators();
 }
