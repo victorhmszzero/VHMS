@@ -20,8 +20,7 @@ Neste portfólio, você encontrará uma variedade de projetos, incluindo(Por enq
 Você pode acessar meu portfólio online <a href="https://victorhmszzero.github.io/VHMS/"/> Clicando aqui </a>
 ## Licença
 
-Todos os direitos reservados. 
-Veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Todos os direitos reservados. Veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
 ---
 
