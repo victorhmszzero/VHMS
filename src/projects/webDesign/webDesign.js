@@ -1,4 +1,4 @@
-const projectNull =[
+const projectNull = [
   {
     id: 0,
     title: "",
@@ -22,13 +22,13 @@ const projects = [
     client: "Conieh Palestras",
     description: "Site institucional para destacar serviços e valores.",
     images: [
-      { text: "Preview página inicial - versão desktop", src: "../src/projects/webDesign/images/web-2-conieh-preview-1.png", type:"web-image" },
-      { text: "Overview principais telas", src: "../src/projects/webDesign/images/web-2-conieh-preview-2.png", type:"image" },
-      { text: "Notas 99 e 94 - Resultados Google PageSpeed", src: "../src/projects/webDesign/images/web-2-conieh-preview-3.png", type:"image" },
+      { text: "Preview página inicial - versão desktop", src: "../src/projects/webDesign/images/web-2-conieh-preview-1.png", type: "web-image" },
+      { text: "Overview principais telas", src: "../src/projects/webDesign/images/web-2-conieh-preview-2.png", type: "image" },
+      { text: "Notas 99 e 94 - Resultados Google PageSpeed", src: "../src/projects/webDesign/images/web-2-conieh-preview-3.png", type: "image" },
     ],
     clientLogo: "../src/projects/webDesign/images/client-logo-conieh.png",
-    content: 
-    `
+    content:
+      `
       <p>
         Desenvolvimento de um site institucional baseado no manual de identidade visual da Conieh Palestras, garantindo uma interface funcional e intuitiva alinhada com a imagem da marca.
       </p>
@@ -55,11 +55,11 @@ const projects = [
     client: "Conieh Palestras",
     description: "Site institucional com blog, sistema personalizado e identidade visual sofisticada.",
     images: [
-      { text: "Preview página inicial", src: "../src/projects/webDesign/images/web-1-conieh-preview-1.png", type: "web-image"},
-    ], 
+      { text: "Preview página inicial", src: "../src/projects/webDesign/images/web-1-conieh-preview-1.png", type: "web-image" },
+    ],
     clientLogo: "../src/projects/webDesign/images/client-logo-conieh.png",
-    content: 
-    `
+    content:
+      `
       <p>
        Projeto de reformulação completo do site institucional da Conieh Palestras, partindo de um retrabalho no manual da marca para transmitir modernidade e sofisticação. O resultado é uma presença digital renovada e funcional, com novas funcionalidades e identidade visual aprimorada.
       </p>
@@ -89,8 +89,8 @@ const projects = [
     client: "Conieh Palestras",
     clientLogo: "../src/projects/webDesign/images/client-logo-conieh.png",
     images: [
-      { text: "Preview página inicial", src: "../src/projects/webDesign/images/web-3-tande-preview-1.png", type: "web-image"},
-    ], 
+      { text: "Preview página inicial", src: "../src/projects/webDesign/images/web-3-tande-preview-1.png", type: "web-image" },
+    ],
     description: "Landing page focada em conversões para o palestrante Tande.",
     content: `
       <p>    
@@ -116,8 +116,8 @@ const projects = [
     client: "Lojas Marabraz",
     clientLogo: "",
     images: [
-      { text: "Preview página inicial",  src: "../src/projects/webDesign/images/web-4-marabraz-preview-1.png", type: "web-image" },
-    ], 
+      { text: "Preview página inicial", src: "../src/projects/webDesign/images/web-4-marabraz-preview-1.png", type: "web-image" },
+    ],
     description: "Landing page criada durante a campanha da Black Friday Marabraz.",
     content: `
       <p>

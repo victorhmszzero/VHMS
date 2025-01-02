@@ -9,7 +9,7 @@ const LINKSLIST = [
   {
     id: 2,
     text: "Design Gráfico",
-    link: "https://victorhmszzero.github.io/VHMS/pages/design",
+    link: "https://victorhmszzero.github.io/VHMS/pages/design.html",
   },
   {
     id: 2,

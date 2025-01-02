@@ -151,7 +151,7 @@ function openModal(index) {
 
   if (project.previewLink) {
     modalElements.previewLink.innerHTML = `
-      <a class="btn" href=""><i class="fa-solid fa-arrow-up-right-from-square"></i>  Visualizar</a>
+      <a class="btn btn--look-more" href="${project.previewLink}" target="_blanck"><i class="fa-solid fa-arrow-up-right-from-square"></i>  Visualizar projeto</a>
     `;
   }
 

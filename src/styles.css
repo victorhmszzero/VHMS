@@ -529,7 +529,7 @@ iframe {
 	min-width: 200px;
 	margin: auto;
 	width: calc(100% - 100px); /* Largura do contêiner */
-	height: 496px; /* Altura do contêiner */
+	height: 420px; /* Altura do contêiner */
 	overflow: hidden; /* Oculta o conteúdo fora do contêiner */
 	position: relative; /* Define a posição relativa para posicionamento absoluto do pseudo-elemento */
 	display: flex; /* torna o container um flex container */
@@ -719,4 +719,16 @@ footer {
 	object-fit: contain;
 	height: 480px !important;
 	margin: 0px auto;
+}
+.btn--look-more {
+	display: flex;
+	gap: 12px;
+	width: -moz-fit-content;
+	width: fit-content;
+	align-items: center;
+	margin: inherit;
+	margin-top: 16px;
+}
+.DISABLED {
+	display: none !important;
 }
