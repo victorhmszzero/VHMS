@@ -4,17 +4,17 @@ const LINKSLIST = [
   {
     id: 1,
     text: "Web Design",
-    link: "../pages/webDesign.html",
+    link: "https://victorhmszzero.github.io/VHMS/pages/webDesign",
   },
   {
     id: 2,
     text: "Design Gráfico",
-    link: "../pages/design.html",
+    link: "https://victorhmszzero.github.io/VHMS/pages/design",
   },
   {
     id: 2,
     text: "Motion Design",
-    link: "../pages/motionDesign.html",
+    link: "https://victorhmszzero.github.io/VHMS/pages/motionDesign",
   },
 ]
 
