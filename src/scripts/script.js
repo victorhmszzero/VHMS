@@ -104,7 +104,10 @@ const nextBtn = document.getElementById("slider-next-btn");
 const slider = document.getElementById("slider");
 
 function updateSlide() {
-  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  animationFrameId = requestAnimationFrame(() => {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  });
+  // slider.style.transform = `translateX(-${currentSlide * 100}%)`;
   resetVideos();
   updateIndicators();
 }
@@ -290,12 +293,18 @@ function enableScrollBody() {
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
+let animationFrameId = null;
 
 // Adicionar eventos de toque no slider
 sliderContainer.addEventListener("touchstart", (event) => {
   startX = event.touches[0].clientX;
   isDragging = true;
   sliderContainer.style.transition = "none"; // Remover a transição durante o arraste
+
+  // Cancelar qualquer animação pendente
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId);
+  }
 });
 
 sliderContainer.addEventListener("touchmove", (event) => {
@@ -317,13 +326,23 @@ sliderContainer.addEventListener("touchend", () => {
   // Verificar se o movimento é suficiente para mudar de slide
   if (deltaX > 50) {
     // Deslizou para a direita (slide anterior)
-    currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
+    currentSlide = Math.max(0, currentSlide - 1);
   } else if (deltaX < -50) {
     // Deslizou para a esquerda (próximo slide)
-    currentSlide = (currentSlide + 1) % slider.children.length;
+    currentSlide = Math.min(slider.children.length - 1, currentSlide + 1);
   }
 
-  // Atualizar o slide com transição
+  // Atualizar o slide com transição suave
   slider.style.transition = "transform 0.3s ease";
   updateSlide();
+
+  // Resetar as variáveis de controle
+  startX = 0;
+  currentX = 0;
 });
+
+// Função para atualizar o slide
+// function updateSlide() {
+//   // Suaviza a transição para o slide correto
+
+// }

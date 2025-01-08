@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Visualização de Projetos</title>
+  <link rel="icon" type="image/x-icon" href="../src/assets/FavIcon.svg">
   <link rel="stylesheet" href="../src/styles.css">
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
 </head>
@@ -20,8 +20,8 @@
     <nav class="DISABLED">
       <ul class="nav">
         <li><a href="#portfolio" class="active">Portfólio</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <!-- <li><a href="#sobre">Sobre</a></li> -->
+        <!-- <li><a href="#contato">Contato</a></li> -->
       </ul>
     </nav>
     <details class="nav-full DISABLED" id="menu-details">
@@ -39,14 +39,9 @@
         </ul>
         <br />
         <div class="footer-icons-container">
-          <a title="Linktree" target="_blank" rel="noopener" class="footer-icons"
-            href="https://linktr.ee/victor_vhms"><span><i class="iconoir-pine-tree"></i></span></a>
-          <a title="Instagram" target="_blank" rel="noopener" class="footer-icons"
-            href="https://www.instagram.com/victor.vhms/"><span><i class="fa-brands fa-instagram"></i></span></a>
-          <a title="Github" target="_blank" rel="noopener" class="footer-icons"
-            href="https://github.com/victorhmszzero"><span><i class="fa-brands fa-github"></i></span></a>
-          <a title="Behance" target="_blank" rel="noopener" class="footer-icons"
-            href="https://www.behance.net/victor_vhms"><span><i class="fa-brands fa-behance"></i></span></a>
+          <a class="footer-icons" href="github"><span><i class="iconoir-pine-tree"></i></span></a>
+          <a class="footer-icons" href="github"><span><i class="fa-brands fa-instagram"></i></span></a>
+          <a class="footer-icons" href="github"><span><i class="fa-brands fa-github"></i></span></a>
         </div>
         <p class="nav-copy"> © 2021-2024 Victor Magalhães. Todos os direitos reservados.</p>
       </div>
@@ -111,9 +106,14 @@
 
   <footer>
     <div class="footer-icons-container">
-      <a class="footer-icons" href="github"><span><i class="iconoir-pine-tree"></i></span></a>
-      <a class="footer-icons" href="github"><span><i class="fa-brands fa-instagram"></i></span></a>
-      <a class="footer-icons" href="github"><span><i class="fa-brands fa-github"></i></span></a>
+      <a title="Linktree" target="_blank" rel="noopener" class="footer-icons"
+        href="https://linktr.ee/victor_vhms"><span><i class="iconoir-pine-tree"></i></span></a>
+      <a title="Instagram" target="_blank" rel="noopener" class="footer-icons"
+        href="https://www.instagram.com/victor.vhms/"><span><i class="fa-brands fa-instagram"></i></span></a>
+      <a title="Github" target="_blank" rel="noopener" class="footer-icons"
+        href="https://github.com/victorhmszzero"><span><i class="fa-brands fa-github"></i></span></a>
+      <a title="Behance" target="_blank" rel="noopener" class="footer-icons"
+        href="https://www.behance.net/victor_vhms"><span><i class="fa-brands fa-behance"></i></span></a>
     </div>
     <div class="footer-copys">
       <p>
@@ -124,15 +124,13 @@
       </p>
     </div>
   </footer>
-  <script src="../src/projects/webDesign/webDesign.js"></script>
+  <script src="../src/projects/appSystem/appSystem.js"></script>
   <script src="../src/scripts/nav.js"></script>
   <script>
-    LINKSLIST[1].active = true
+    LINKSLIST[0].active = true
   </script>
   <script src="../src/scripts/script.js"></script>
   <script src="../src/scripts/script-resetVideos.js"></script>
-
-
 </body>
 
 </html>

@@ -145,7 +145,12 @@ nav {
 @media only screen and (max-width: 700px) {
 	.category-list {
 		flex-direction: column;
-		gap: 24px;
+		gap: 16px;
+	}
+	.category {
+		display: block;
+		max-width: 200px;
+		margin: 0px auto;
 	}
 }
 
@@ -306,18 +311,21 @@ iframe {
 }
 
 .indicators {
-	display: block;
+	display: flex;
 	padding-top: 1.5rem;
 	height: 5px;
-	width: -moz-fit-content;
-	width: fit-content;
+	max-width: 420px;
+	width: 80%;
 	margin: 0px auto 14px;
+	/* width: -moz-fit-content; */
+	/* width: fit-content; */
+	/* margin: 0px auto 14px; */
 }
 
 .indicator {
 	transition: all 500ms;
 	display: inline-block;
-	width: 50px;
+	width: 50%;
 	height: 5px;
 	background-color: #6c6c6c;
 	border-radius: 10px;
@@ -325,7 +333,7 @@ iframe {
 }
 
 .indicator.active {
-	width: 100px;
+	width: 100%;
 	background-color: #ffffff;
 }
 
