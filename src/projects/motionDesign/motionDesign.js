@@ -23,7 +23,7 @@ const projects = [
     html: `
       <div class="video-container">
         <img 
-          src="../src/projects/motionDesign/images/2024-video1-marabraz.png" 
+          src="src/projects/motionDesign/images/2024-video1-marabraz.png" 
           alt="Thumbnail do Vídeo" 
           class="thumbnail" 
           style="cursor: pointer; width: 100%; height: auto;"
@@ -64,7 +64,7 @@ const projects = [
     html: `
       <div class="video-container">
         <img 
-          src="../src/projects/motionDesign/images/2024-video2-marabraz.png" 
+          src="src/projects/motionDesign/images/2024-video2-marabraz.png" 
           alt="Thumbnail do Vídeo" 
           class="thumbnail" 
           style="cursor: pointer; width: 100%; height: auto;"
@@ -106,7 +106,7 @@ const projects = [
     html: `
       <div class="video-container">
         <img 
-          src="../src/projects/motionDesign/images/2024-video3-marabraz.png"
+          src="src/projects/motionDesign/images/2024-video3-marabraz.png"
           alt="Thumbnail do Vídeo" 
           class="thumbnail" 
           style="cursor: pointer; width: 100%; height: auto;"
@@ -150,7 +150,7 @@ const projects = [
     html: `
       <div class="video-container">
         <img 
-          src="../src/projects/motionDesign/images/2024-PFISAGA.png"
+          src="src/projects/motionDesign/images/2024-PFISAGA.png"
           alt="Thumbnail do Vídeo" 
           class="thumbnail" 
           style="cursor: pointer; width: 100%; height: auto;"
@@ -192,7 +192,7 @@ const projects = [
     html: `
       <div class="video-container">
         <img 
-          src="../src/projects/motionDesign/images/2023-video1-MBAdoPalestrante.png" 
+          src="src/projects/motionDesign/images/2023-video1-MBAdoPalestrante.png" 
           alt="Thumbnail do Vídeo" 
           class="thumbnail" 
           style="cursor: pointer; width: 100%; height: auto;"
@@ -234,7 +234,7 @@ const projects = [
     html: `
       <div class="video-container">
       <img 
-        src="../src/projects/motionDesign/images/2023-video1-MotiveacaoPalestras.png" 
+        src="src/projects/motionDesign/images/2023-video1-MotiveacaoPalestras.png" 
         alt="Thumbnail do Vídeo" 
         class="thumbnail" 
         style="cursor: pointer; width: 100%; height: auto;"
