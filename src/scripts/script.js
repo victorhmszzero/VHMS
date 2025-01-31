@@ -16,14 +16,6 @@ const modalElements = {
 let currentSlide = 0;
 let currentImageIndex = 0;
 
-
-
-
-
-
-
-
-
 // Função para preencher o slider
 function fillSlider() {
   if (!sliderContainer || !Array.isArray(projects) || projects.length === 0) {

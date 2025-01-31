@@ -4,22 +4,22 @@ const LINKSLIST = [
   {
     id: 1,
     text: "Sistemas e Apps",
-    link: "https://victorhmszzero.github.io/VHMS/pages/appSystem",
+    link: "appSystem.html",
   },
   {
     id: 2,
     text: "Web Design",
-    link: "https://victorhmszzero.github.io/VHMS/pages/webDesign",
+    link: "webDesign.html",
   },
   {
     id: 3,
     text: "Design Gráfico",
-    link: "https://victorhmszzero.github.io/VHMS/pages/design.html",
+    link: "design.html",
   },
   {
     id: 4,
     text: "Motion Design",
-    link: "https://victorhmszzero.github.io/VHMS/pages/motionDesign",
+    link: "motionDesign.html",
   },
 ]
 
