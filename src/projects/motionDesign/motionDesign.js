@@ -14,9 +14,48 @@ const projectNull = [
   },
 ]
 const projects = [
+  // Validação
+  {
+    id: 0,
+    title: "Voices (Unofficial Music Video)",
+    client: "Escola SAGA",
+    clientLogo: "",
+    html: `
+      <div class="video-container">
+        <img 
+          src="src/projects/motionDesign/images/2022-video1-SAGA.png"
+          alt="Thumbnail do Vídeo" 
+          class="thumbnail" 
+          style="cursor: pointer; width: 100%; height: auto;"
+        />
+        <iframe 
+          class="video-url" 
+          src="https://drive.google.com/file/d/1Jvue3bAN2RQgZJHyuAfRnvyoTZCcyt_O/preview"
+          style="display: none;"
+          allow="autoplay"
+          height="480" 
+          >
+        </iframe>
+      </div>
+    `,
+    images: [
+      { text: "", src: "src/projects/motionDesign/images/2022-video1-SAGA.png" },
+    ],
+    description: "Produção e Edição de Clipe Musical.",
+    content: `<p>O objetivo deste projeto foi criar um clipe não oficial a partir de 28 gravações genéricas, escolhendo uma música de minha preferência. Como resultado, produzi um videoclipe editado e ambientado para a música "Voices" da banda <i>Against the Current.</i></p>
+    <p><strong>Destaques:</strong></p>
+    <ul>
+      <li>Edição, tratamento e mapeamento de vídeo.</li>
+      <li>Ambientação e tratamento de áudio.</li>
+    </ul>
+    `,
+    technologies: [
+      { name: "Premiere", icon: "iconoir-media-video" }
+    ],
+  },
   // Dia das Crianças
   {
-    id: 3,
+    id: 1,
     title: "Dia das Crianças",
     client: "Lojas Marabraz",
     clientLogo: "",
@@ -57,7 +96,7 @@ const projects = [
   },
   // Halloween da Mara
   {
-    id: 3,
+    id: 2,
     title: "Halloween da Mara",
     client: "Lojas Marabraz",
     clientLogo: "",
@@ -80,7 +119,7 @@ const projects = [
       </div>
     `,
     images: [
-      { text: "", src: "https://victorhmszzero.github.io/VHMS/assets/BannerMotiveaçãoPalestras.png" },
+      { text: "", src: "src/projects/motionDesign/images/2024-video2-marabraz.png" },
     ],
     description: "Desenvolvimento de um site institucional para a Conieh Palestras.",
     content: `<p>Produção de vídeo animado especial de Halloween, desenvolvido a partir do briefing enviado. O projeto incluiu animações, ambientação temática e a criação de uma thumbnail. O tratamento de imagens foi realizado para criar uma atmosfera imersiva e visualmente impactante.</p>
@@ -143,7 +182,7 @@ const projects = [
   },
   // PFI Escola SAGA
   {
-    id: 3,
+    id: 4,
     title: "PFI Escola SAGA",
     client: "Giovanni Varani",
     clientLogo: "",
@@ -185,7 +224,7 @@ const projects = [
   },
   //Reels MBa do Palestrante
   {
-    id: 2,
+    id: 5,
     title: "Reels Social Media",
     client: "MBA do Palestrante",
     clientLogo: "",
@@ -227,7 +266,7 @@ const projects = [
   },
   //Reels Recorte de Live
   {
-    id: 1,
+    id: 6,
     title: "Reels Recorte de Live",
     client: "Motiveação Palestras",
     clientLogo: "",
