@@ -1,5 +1,7 @@
 # Portfólio de Victor Magalhães
 
+<img src="src/assets/FavIcon.svg" width="100">
+
 Bem-vindo ao meu portfólio online! Este repositório contém os arquivos do meu site portfólio, onde compartilho alguns dos meus projetos e trabalhos.
 
 ## Sobre
